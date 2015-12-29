@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+  
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <!-- endbuild -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+      <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.css" />
+      <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.css" />
+      <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css" />
+      <!-- endbower -->
+  </head>
+  <body ng-app="myprojectApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+      <div class="navbar-fixed-top navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">New Widgets POC</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#menu-toggle" id="menu-toggle">Toggle Side Menu</a></li>
+            </ul>
+          
+          </div>
+        </div>
+      </div>
+
+    <div id="wrapper" style="padding-top: 50px;">
+       <div ng-include="'views/sidebar.html'" scope="" onload=""></div>         
+       <div ng-view="" id="page-content-wrapper"></div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <!--<script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script> -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/angularjs-slider/dist/rzslider.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/viewer/dist/crocodoc.viewer.js"></script>
+    <script src="bower_components/jqcloud2/dist/jqcloud.js"></script>
+    <script src="bower_components/angular-jqcloud/angular-jqcloud.js"></script>
+    <script src="bower_components/ionic-rating/ionic-rating.js"></script>
+    <script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
+    <script src="bower_components/angular-sticky-navigation-directive/dist/ng-sticky.js"></script>
+    <script src="bower_components/flow.js/dist/flow.js"></script>
+    <script src="bower_components/ng-flow/dist/ng-flow.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/clientSideFilter.js"></script>
+        <script src="scripts/controllers/typeahead.js"></script>
+        <script src="scripts/controllers/resizableHeader.js"></script>
+        <script src="scripts/controllers/pincolumn.js"></script>
+        <script src="scripts/controllers/spinSlide.js"></script>
+        <script src="scripts/controllers/sortViaDragDrop.js"></script>  
+        <script src="scripts/controllers/tagCloud.js"></script> 
+        <script src="scripts/controllers/ratingWidget.js"></script>      
+        <script src="scripts/controllers/timelineWidget.js"></script>
+        <script src="scripts/controllers/dragDrop.js"></script>       
+        <script src="scripts/ui-bootstrap-tpls-0.14.3.js"></script>
+        <script src="scripts/ng-table.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

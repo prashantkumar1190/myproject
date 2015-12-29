@@ -1,0 +1,77 @@
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="active">
+                    <a href="#/spinAndSlide">Spinners and Sliders<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/accordions">Accordions<span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#/tagClouds">Tag Clouds<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/inLineDocBrwsr">Inline Document Browser<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/html5viewer">HTML5 Viewer (Docs/Renditions)</a>
+                </li>
+                <li>
+                    <a href="#/timelineWidget">Timeline Widget<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/ratingWidget">Rating Widget<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/dragDropFileUpload">Drag/Drop Fileupload</a>
+                </li>
+                <li>
+                    <a href="#/sortViaDragDrop">Sort via Drag/Drop<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/jumbotron">Jumbotron<span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+                </li>
+                <li>
+                    <a href="#/dockedNavigationOnScroll">Docked Navigation<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/clientSidefiltering">Client Side Filter<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/typeAhead">Typeahead<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/resizableHeaders">Resizable Headers<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+                <li>
+                    <a href="#/pinningOfColumns">Pinning of Columns<span class="glyphicon glyphicon-ok" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    $(".nav li").on("click", function() {
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+     $("window").on("click", function() {
+      $(".nav li").removeClass("active");
+    });
+
+   /* $("ul.sidebar-nav li").on("click", function() {
+      $("ul.sidebar-nav li").removeClass("active");
+      $(this).addClass("active");
+    });*/
+    </script>

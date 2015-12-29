@@ -1,0 +1,37 @@
+<p class="lead page-header">Drag and Drop on File Upload</p>
+
+<div class="well">
+    <p><b>Description:</b>
+    </p>
+    <p>Load files via Drag and Drop using https://github.com/flowjs/ng-flow</p>
+</div>
+
+<p><b>Demo:</b></p>
+<hr/>
+<div flow-init="{target: '/upload'}"
+     flow-files-submitted="$flow.upload()"
+     flow-file-success="$file.msg = $message">
+
+  <input type="file" class="btn btn-info"  flow-btn/>
+  Input OR Other element as upload button
+  <span class="btn btn-primary" flow-btn>Upload File</span>
+  <br>
+
+  <table>
+    <tr ng-repeat="file in $flow.files">
+        <td>{{$index+1}}</td>
+        <td>{{file.name}}</td>
+        <td>{{file.msg}}</td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+<div class="well">
+    <p><b>Code:</b>
+    </p>
+    <xmp>
+    
+    </xmp>
+</div>

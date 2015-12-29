@@ -1,0 +1,111 @@
+<p class="lead page-header">Accordions</p>
+
+<div class="well">
+    <p><b>Description:</b>
+    </p>
+    <p>The graphical control element accordion is a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "stretched" to reveal the content associated with that item. There can be zero expanded items, exactly one, or more than one item expanded at a time, depending on the configuration.</p>
+    <p>My tasks grid with action buttons and similar grids with actionable buttons such as project details, personal workspace etc.</p>
+</div>
+
+<p><b>Demo:</b></p>
+<hr/>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" 
+aria-expanded="false" aria-controls="collapseExample">
+  Button Accordion
+</button>
+<br>
+<div class="collapse" id="collapseExample">
+  <div class="well">
+     Some Text Description
+  </div>
+</div>
+
+<br/>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" 
+        aria-expanded="false" aria-controls="collapseOne">
+         Accordion #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Some Text Description
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" 
+        aria-expanded="false" aria-controls="collapseTwo">
+          Accordion #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+       Some Text Description
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="well">
+    <p><b>Code:</b>
+    </p>
+    <xmp>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" 
+aria-expanded="false" aria-controls="collapseExample">
+  Button Accordion
+</button>
+<br>
+<div class="collapse" id="collapseExample">
+  <div class="well">
+     Some Text Description
+  </div>
+</div>
+
+<br/>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" 
+        aria-expanded="false" aria-controls="collapseOne">
+          Accordion #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Some Text Description
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" 
+        aria-expanded="false" aria-controls="collapseTwo">
+          Accordion #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+       Some Text Description
+      </div>
+    </div>
+  </div>
+</div>
+
+    </xmp>
+</div>

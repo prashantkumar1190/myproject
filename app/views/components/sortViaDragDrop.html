@@ -1,0 +1,56 @@
+<p class="lead page-header">Sort using Drog and Drop</p>
+
+<div class="well">
+    <p><b>Description:</b>
+    </p>
+    <p>When you want to organize different categories. For example change order of questions in a Supplier questionnaire and/or move across a question to another section or sub section.</p>
+</div>
+
+<p><b>Demo:</b></p>
+<hr/>
+
+<div class="container">
+  <div class="floatleft">
+    <ul ui-sortable="sortableOptions" ng-model="list" class="list">
+      <li ng-repeat="item in list" class="item">
+      	{{item.text}}
+      </li>
+    </ul>
+  </div>
+</div>
+<br>
+
+
+<div class="well">
+    <p><b>Code:</b>
+    </p>
+    <xmp>
+    <div class="container">
+  <div class="floatleft">
+    <ul ui-sortable="sortableOptions" ng-model="list" class="list">
+      <li ng-repeat="item in list" class="item">
+      	{{item.text}}
+      </li>
+    </ul>
+  </div>
+</div>
+<br>
+    </xmp>
+</div>
+
+<style type="text/css">
+.item {
+	width: 200px;
+	padding: 5px 10px;
+	margin: 5px 0;
+	border: 2px solid #444;
+	border-radius: 5px;
+	background-color: white;
+
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	cursor: move;
+}
+
+</style>

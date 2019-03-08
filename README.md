@@ -4,7 +4,7 @@ Sample POC of advanced widgets.
 
 ## Build & development
 
-`npm install && npm install grunt`
+`npm install && npm install grunt &&B bower install`
 
 Run `grunt` for building and `grunt serve` for preview.
 

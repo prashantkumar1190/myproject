@@ -1,6 +1,4 @@
-# myproject
-
-Sample POC of advanced widgets.
+# Sample POC of advanced widgets.
 
 ## Build & development
 
